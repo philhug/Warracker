@@ -27,7 +27,7 @@ log "Running database migrations..."
 python /app/migrations/apply_migrations.py
 
 log "Fixing permissions (database and upload folder)..."
-python /app/fix_permissions.py
+python /app/fix_permissions.py || true
 
 # Translation compilation
 log "Compiling translations..."
